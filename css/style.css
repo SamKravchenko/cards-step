@@ -1,0 +1,342 @@
+.page-body {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__inner {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #212529;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-left: 15px;
+}
+
+.header__btn {
+    padding: .5rem 1rem;
+    font-size: .875rem;
+    border: 1px solid#6c757d;
+    border-radius: .2rem;
+    color: #6c757d;
+    transition: .15s;
+}
+
+.header__btn:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    transition: all .8s ease;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__body {
+    min-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.modal__content {
+    min-width: 320px;
+    max-width: 800px;
+    min-height: 320px;
+    max-height: 650px;
+    background-color: #fff;
+    color: #212529;
+    padding: 30px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+
+}
+
+.modal__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: #000;
+    transition: .2s;
+}
+
+.modal__close:hover {
+    color: rgba(0, 0, 0, .5);
+}
+
+.modal--open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.visit-title {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.visit__field__inner {
+    width: 100%;
+    min-height: 502px;
+    max-height: 542px;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    padding: 10px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.visit__field__default-text {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 235px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #212529;
+    text-transform: capitalize;
+}
+
+.visit__field__cards {
+    min-width: 50px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.card{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .4);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    color:rgba(0, 0, 0, .8);
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-list a{
+    color:rgba(0, 0, 0, .8);
+    font-size: 18px;
+}
+
+.card--before {
+    height: 120px;
+}
+
+.card__list--before {
+    justify-content: flex-start;
+    line-height: 30px;
+}
+
+.card-item {
+    width: 100%;
+    padding-left: 5px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+.card-delete {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    font-size: 18px;
+    color: #000;
+    transition: .2s;
+}
+
+.card-delete:hover {
+    color: rgba(0, 0, 0, .5);
+}
+
+.edit-card {
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    color:rgba(0, 0, 0, .8);
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.createVisit-title {
+    margin-top: 35px;
+}
+
+.errInput {
+    border-color: red;
+    outline-color: red;
+}
+
+.errSpan {
+    font-size: 10px;
+    font-weight: 700;
+    color: red;
+    transform: translateY(-15px);
+}
+
+.search__field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-input {
+    width: 50%;
+}
+
+#search-btn {
+    width: 20%;
+}
+
+#priority, #open-done {
+    width: 10%;
+}
+
+.footer__inner {
+    width: 100%;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #212529;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border-radius: 2rem;
+    background-color: #fff;
+    color: #212529;
+    border-color: #212529;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #212529;
+    color: #fff;
+    border-color: #fff;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+
+@media (max-width: 767px) {
+    .header__inner, .search__field {
+        flex-direction: column;
+    }
+
+    .header__btn {
+        padding: .5rem 5rem;
+        margin-top: 15px;
+    }
+
+    #search-input, #priority, #search-btn {
+        width: 100%;
+    }
+}
