@@ -1,5 +1,4 @@
 # Step Project "Cards"
-## Description
 A primitive version of CRM-system for registering patients an appointment with a doctor.
 
 ## Tech
@@ -7,5 +6,6 @@ A primitive version of CRM-system for registering patients an appointment with a
 - HTML/CSS
 
 ## [GitHub Pages](https://samkravchenko.github.io/cards-step/)
+**Auth:**
 - Login: cards-pj@gmail.com
 - Password: 12345
