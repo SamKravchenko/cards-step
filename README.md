@@ -1,4 +1,5 @@
 # Step Project "Cards"
+## Description
 A primitive version of CRM-system for registering patients an appointment with a doctor.
 
 ## Tech
